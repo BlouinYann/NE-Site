@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="images/flame.png">
+<title>Nant'Effect — Effets spéciaux scéniques</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&family=Share+Tech+Mono&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+  <div class="hero-photo-col">
+    <img 
+      src="images/20230826-023850-Credits-YourWolfAgency_pyro.jpg" 
+      alt="Concert pyrotechnie scène" 
+      class="hero-img"
+      loading="eager"
+    >
+    <div class="hero-img-caption-left">©YourWolfAgency</div>
+  </div>
+
+  <div class="hero-text-col">
+    <div class="hero-overline">
+      <span class="mono">SFX / Loire-ATLANTIQUE</span>
+      <span class="overline-bar"></span>
+    </div>
+
+    <h1 class="hero-h1">
+      <span class="h1-line1">Prestation.</span>
+      <span class="h1-line2">Location.</span>
+      <span class="h1-line3">Vente.</span>
+    </h1>
+
+    <p class="hero-body">
+      Effets spéciaux scéniques pour concerts, festivals et spectacles. 
+      Location, prestation clé en main, vente de matériel.
+      On opère depuis 2009 — sur scène depuis le premier soir.
+    </p>
+
+    <div class="hero-actions">
+      <a href="machines.html" class="btn-raw">Voir le parc matériel</a>
+      <a href="contact.html" class="btn-ghost-raw">Demander un devis</a>
+    </div>
+    </div>
+  </div>
+
+  <canvas id="embers"></canvas>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee-section">
+  <span class="marquee-label">Ils ont travaillé avec nous</span>
+  <div class="marquee-track">
+    <span>HELLFEST</span><span class="fill">DAVID GUETTA</span><span>DJ SNAKE</span><span class="fill">MARTIN GARRIX</span><span>MARIAH CAREY</span><span class="fill">MARSHMELLO</span><span>SOUCHON &amp; VOULZY</span><span class="fill">ANGÈLE</span><span>MAJOR LAZER</span><span class="fill">SOFIANE PAMART</span>
+    <span>HELLFEST</span><span class="fill">DAVID GUETTA</span><span>DJ SNAKE</span><span class="fill">MARTIN GARRIX</span><span>MARIAH CAREY</span><span class="fill">MARSHMELLO</span><span>SOUCHON &amp; VOULZY</span><span class="fill">ANGÈLE</span><span>MAJOR LAZER</span><span class="fill">SOFIANE PAMART</span>
+  </div>
+</div>
+
+<!-- ==================== EFFETS ==================== -->
+<section id="effets" class="section-effets">
+  <div class="section-label-vert">NOTRE PARC</div>
+
+  <div class="effets-header">
+    <h2 class="section-title">Plusieurs effets,<br><em>un seul interlocuteur</em></h2>
+    <p class="section-sub">
+      Des machines Magic FX, Next FX, Look Solution, Oh FX, Universal Effects, Showven, Explo. 
+      Entretenues, calibrées, opérées par notre équipe.
+      <a href="machines.html" class="inline-link">Voir toutes les machines →</a>
+    </p>
+  </div>
+
+  <div class="effets-grid">
+    <a href="machines.html#pyro" class="effet-tile effet-pyro">
+      <img src="images/20230826-023850-Credits-YourWolfAgency_pyro.jpg" alt="Pyrotechnie de scène" loading="lazy">
+      <div class="hero-img-caption-right">©YourWolfAgency</div>
+      <div class="effet-overlay">
+        <span class="effet-num">01</span>
+        <div class="effet-info">
+          <h3>Pyrotechnie de scène</h3>
+          <p>Gerbes, comètes, jets de flammes synchronisés</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="machines.html#flammes" class="effet-tile effet-flammes">
+      <img src="images/20230616-015707-Credits-@YourWolfAgency_flame.jpg" alt="Flammes scène" loading="lazy">
+      <div class="hero-img-caption-right">©YourWolfAgency</div>
+      <div class="effet-overlay">
+        <span class="effet-num">02</span>
+        <div class="effet-info">
+          <h3>Flammes</h3>
+          <p>Rampes et torches gaz, hauteur réglable</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="machines.html#co2" class="effet-tile effet-co2">
+      <img src="images/20230826-014751-Credits-YourWolfAgency_co2.jpg" alt="CO2 jet concert" loading="lazy">
+      <div class="hero-img-caption-right">©YourWolfAgency</div>
+      <div class="effet-overlay">
+        <span class="effet-num">03</span>
+        <div class="effet-info">
+          <h3>CO2 Jet</h3>
+          <p>Jets glacés haute pression, signature électro</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="machines.html#confettis" class="effet-tile effet-confettis">
+      <img src="images/1651734963455@Antonin_Chavrier_conf.jpg" alt="Confettis concert" loading="lazy">
+      <div class="hero-img-caption-right">@Antonin Chavrier</div>
+      <div class="effet-overlay">
+        <span class="effet-num">04</span>
+        <div class="effet-info">
+          <h3>Confettis &amp; Streamers</h3>
+          <p>Canons et turbines, tirs multi-points</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="machines.html#fumee" class="effet-tile effet-fumee">
+      <img src="images/20230617-233518-Credits-@YourWolfAgency_smoke.jpg" alt="Fumée et Fumée lourde scène" loading="lazy">
+      <div class="hero-img-caption-right">©YourWolfAgency</div>
+      <div class="effet-overlay">
+        <span class="effet-num">05</span>
+        <div class="effet-info">
+          <h3>Fumées</h3>
+          <p>Ambiance et nappe basse et stable pour les jeux de lumière</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="machines.html#neige" class="effet-tile effet-neige">
+      <img src="images/nant_effect_snow.jpg" alt="Neige effet scène" loading="lazy">
+      <div class="hero-img-caption-right">@Nant'Effect</div>
+      <div class="effet-overlay">
+        <span class="effet-num">06</span>
+        <div class="effet-info">
+          <h3>Neige</h3>
+          <p>Flocons pour finals et ambiances hivernales</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="machines.html#mousse" class="effet-tile">
+      <div class="hero-img-caption-right">@Nant'Effect</div>
+      <img src="images/11745925_805953852856197_1465360373437544248_n_mousse.jpg" alt="Concert mousse" loading="lazy">
+      <div class="effet-overlay">
+        <span class="effet-num">07</span>
+        <div class="effet-info">
+          <h3>Mousse</h3>
+          <p>Mousse party pour publics festifs</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="machines.html#spark" class="effet-tile">
+      <div class="hero-img-caption-right">©YourWolfAgency</div>
+      <img src="images/20230617-205551-Credits-@YourWolfAgency_spark.jpg" alt="Spark étincelles" loading="lazy">
+      <div class="effet-overlay">
+        <span class="effet-num">08</span>
+        <div class="effet-info">
+          <h3>Spark / Étincelles froides</h3>
+          <p>Gerbes sans pyrotechnie classique</p>
+        </div>
+      </div>
+    </a>
+
+    <!-- More effects row -->
+    <div class="effet-more-row">
+      <div class="effet-small">
+        <span class="effet-small-num">09</span>
+        <span class="effet-small-name">Bulles</span>
+      </div>
+      <div class="effet-small">
+        <span class="effet-small-num">10</span>
+        <span class="effet-small-name">Fumée Geyser</span>
+      </div>
+      <div class="effet-small">
+        <span class="effet-small-num">11</span>
+        <span class="effet-small-name">Vent / Air</span>
+      </div>
+      <div class="effet-small">
+        <span class="effet-small-num">12</span>
+        <span class="effet-small-name">Rideaux &amp; Drop</span>
+      </div>
+      <a href="machines.html" class="effet-small effet-small-cta">
+        <span>Tout voir →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== HELLFEST STRIP ==================== -->
+<div class="hellfest-strip">
+  <img src="images/20230617-170706-Credits-@YourWolfAgency-600x401_equipes.jpg" alt="Festival concert" class="hellfest-bg" loading="lazy">
+  <div class="hero-img-caption-left">©YourWolfAgency</div>
+  <div class="hellfest-overlay"></div>
+</div>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="about" id="societe">
+  
+  <!-- En-tête en 2 colonnes asymétriques -->
+  <div class="about-header-layout">
+    <div class="about-header-text">
+      <h2 class="about-main-title">À PROPOS</h2>
+      <p class="about-lead">
+        De la prestation à la vente : découvrez nos différents champs d'action.
+      </p>
+    </div>
+    
+    <div class="about-header-visual">
+      <div class="societe-photo-stack">
+        <img src="images/20230617-235345-Credits-@YourWolfAgency_flame.jpg" alt="Technicien effets spéciaux" class="stack-main" loading="lazy">
+        <div class="hero-img-caption-right">©YourWolfAgency</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Séparateur visuel pour aérer avant les colonnes -->
+  <div class="about-divider"></div>
+
+  <!-- Grille des 4 colonnes -->
+  <div class="about-grid-4col">
+    
+    <!-- Colonne 1 -->
+<div class="about-col">
+  <div class="about-col-num">01 //</div>
+  <h3 class="about-col-title">PRESTATION</h3>
+  <p class="about-col-text">
+    Création de spectacles SFX sur mesure avec techniciens et matériel pour tous types d'événements (tournées, festivals, etc.).
+  </p>
+</div>
+
+    <!-- Colonne 2 -->
+<div class="about-col">
+  <div class="about-col-num">02 //</div>
+  <h3 class="about-col-title">SUPERVISION</h3>
+  <p class="about-col-text">
+    Supervision d'équipes SFX sur les tournées internationales pour garantir le strict respect des normes de sécurité françaises.
+  </p>
+</div>
+
+    <!-- Colonne 3 -->
+<div class="about-col">
+  <div class="about-col-num">03 //</div>
+  <h3 class="about-col-title">LOCATION</h3>
+  <p class="about-col-text">
+    Location de matériel d'effets spéciaux professionnels, disponible pour des besoins de courte ou longue durée.
+  </p>
+</div>
+
+   <!-- Colonne 4 -->
+<div class="about-col">
+  <div class="about-col-num">04 //</div>
+  <h3 class="about-col-title">VENTE</h3>
+  <p class="about-col-text">
+    Vente de matériel SFX. Nous sommes revendeurs officiels français de la marque Magic FX.
+  </p>
+</div>
+
+  </div>
+</section>
+
+<!-- ==================== REFERENCES ==================== -->
+<section id="references" class="section-references">
+
+  <!-- CARROUSEL PRESTATIONS -->
+  <div class="prest-carousel" id="prestCarousel">
+    <div class="prest-track" id="prestTrack">
+
+      <!-- Slide Hellfest -->
+      <div class="prest-slide" style="background-image:url('images/20230617-014829-Credits-@YourWolfAgency_hellfest.jpg')">
+        <div class="prest-overlay"></div>
+        <div class="hero-img-caption-right-top">©YourWolfAgency</div>
+        <div class="prest-content">
+          <h2 class="prest-title">Hellfest</h2>
+          <p class="prest-meta"><span class="prest-lieu">Clisson, Pays de la Loire</span><span class="prest-sep">·</span><span class="prest-year">Depuis 2016</span></p>
+          <p class="prest-desc">Gestion complète des effets spéciaux sur les différentes scènes du festival : pyro, CO2, flammes, ...</p>
+        </div>
+      </div>
+
+      <!-- Slide Sofiane Pamart -->
+      <div class="prest-slide" style="background-image:url('images/Sofiane_Pamart.jpg')">
+        <div class="prest-overlay"></div>
+        <div class="hero-img-caption-right-top">©?</div>
+        <div class="prest-content">
+          <h2 class="prest-title">Piano enflammé</h2>
+          <p class="prest-meta"><span class="prest-lieu">Sofiane Pamart</span><span class="prest-sep">·</span><span class="prest-year">2022</span></p>
+          <p class="prest-desc">Plus de deux mois de R&amp;D pour transformer une demande hors-norme en effet scénique fiable et reproductible soir après soir — pour Sofiane Pamart.</p>
+        </div>
+      </div>
+
+      <!-- Slide VandB -->
+      <div class="prest-slide" style="background-image:url('images/20230826-020548-Credits-YourWolfAgency_v&b.jpg')">
+        <div class="prest-overlay"></div>
+        <div class="hero-img-caption-right-top">©YourWolfAgency</div>
+        <div class="prest-content">
+          <h2 class="prest-title">V&amp;B Festival</h2>
+          <p class="prest-meta"><span class="prest-lieu">Château-Gontier, Mayenne</span><span class="prest-sep">·</span><span class="prest-year">2023</span></p>
+          <p class="prest-desc">Effets pyro et CO2 sur les sets de DJ Snake &amp; Timmy Trumpet. Deuxième collaboration avec ce festival.</p>
+        </div>
+      </div>
+
+      <!-- Slide Garrix -->
+      <div class="prest-slide" style="background-image:url('images/nant_effect_martin_garrix.png')">
+        <div class="prest-overlay"></div>
+        <div class="hero-img-caption-right-top">©Nant'Effect</div>
+        <div class="prest-content">
+          <h2 class="prest-title">Martin Garrix</h2>
+          <p class="prest-meta"><span class="prest-lieu">France </span><span class="prest-sep">·</span><span class="prest-year">2022</span></p>
+          <p class="prest-desc">Mise en scène effets spéciaux. Spark, nappe de fumée,CO2, final pyrotechnique.</p>
+        </div>
+      </div>
+
+
+      <!-- Slide Gala Piece Jaunes -->
+      <div class="prest-slide" style="background-image:url('images/pj_2026_Apolline_Cornuet.jpg')">
+        <div class="prest-overlay"></div>
+        <div class="hero-img-caption-right-top">@Apolline Cornuet</div>
+        <div class="prest-content">
+          <h2 class="prest-title">Gala des Pièces Jaunes</h2>
+          <p class="prest-meta"><span class="prest-lieu">Paris la Défense Arena</span><span class="prest-sep">·</span><span class="prest-year">Depuis 2025</span></p>
+          <p class="prest-desc">Mise en scène effets spéciaux pour le Gala des Pièces Jaunes. Flames, Fumée, Étincelles, Confettis.</p>
+        </div>
+      </div>
+
+    </div><!-- /prest-track -->
+
+    <!-- Contrôles -->
+    <button class="prest-btn prest-prev" id="prestPrev" aria-label="Précédent">&#8592;</button>
+    <button class="prest-btn prest-next" id="prestNext" aria-label="Suivant">&#8594;</button>
+
+    <!-- Dots (générés automatiquement par JS) -->
+    <div class="prest-dots" id="prestDots"></div>
+
+    <!-- Compteur (mis à jour automatiquement par JS) -->
+    <div class="prest-counter mono"><span id="prestCurrent">01</span> / <span id="prestTotal">01</span></div>
+
+  </div><!-- /prest-carousel -->
+
+
+<!-- ==================== CTA STRIP ==================== -->
+<div class="cta-strip">
+  <div class="cta-strip-inner">
+    <p class="cta-strip-text">Un show en préparation&nbsp;?</p>
+    <a href="contact.html" class="cta-strip-btn">Parlez-nous de votre projet →</a>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script>
+/* ---- Carrousel Prestations — tout est auto-généré depuis les .prest-slide ---- */
+(function(){
+  const track   = document.getElementById('prestTrack');
+  const dotsWrap = document.getElementById('prestDots');
+  const current = document.getElementById('prestCurrent');
+  const total   = document.getElementById('prestTotal');
+  const slides  = document.querySelectorAll('.prest-slide');
+  const n       = slides.length;
+  let idx = 0, autoTimer, isDragging = false, startX = 0;
+
+  /* Génération automatique des dots */
+  const dots = [];
+  slides.forEach((_, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'prest-dot' + (i === 0 ? ' active' : '');
+    btn.setAttribute('aria-label', `Slide ${i + 1}`);
+    btn.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(btn);
+    dots.push(btn);
+  });
+
+  /* Compteur total */
+  total.textContent = String(n).padStart(2, '0');
+
+  function goTo(i) {
+    idx = (i + n) % n;
+    track.style.transform = `translateX(-${idx * 100}%)`;
+    dots.forEach((d, j) => d.classList.toggle('active', j === idx));
+    current.textContent = String(idx + 1).padStart(2, '0');
+    resetAuto();
+  }
+
+  document.getElementById('prestPrev').addEventListener('click', () => goTo(idx - 1));
+  document.getElementById('prestNext').addEventListener('click', () => goTo(idx + 1));
+
+  /* Swipe tactile */
+  const carousel = document.getElementById('prestCarousel');
+  carousel.addEventListener('touchstart', e => { startX = e.touches[0].clientX; isDragging = true; }, {passive:true});
+  carousel.addEventListener('touchend', e => {
+    if (!isDragging) return;
+    const delta = e.changedTouches[0].clientX - startX;
+    if (Math.abs(delta) > 50) goTo(delta < 0 ? idx + 1 : idx - 1);
+    isDragging = false;
+  });
+
+  /* Autoplay */
+  function resetAuto() { clearInterval(autoTimer); autoTimer = setInterval(() => goTo(idx + 1), 6000); }
+  carousel.addEventListener('mouseenter', () => clearInterval(autoTimer));
+  carousel.addEventListener('mouseleave', resetAuto);
+  resetAuto();
+})();
+</script>
+<script src="js/components.js"></script>
+</body>
+</html>

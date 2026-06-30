@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/flame.png">
+  <title>Tarifs — Nant'Effect Effets Spéciaux Scéniques</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&family=Share+Tech+Mono&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    /* ── LEGAL GRID ── */
+    .legal-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      background: var(--line-hard);
+    }
+    .legal-block {
+      background: var(--bg);
+      padding: 52px 44px;
+    }
+    .legal-block.full {
+      grid-column: 1 / -1;
+    }
+    .legal-block-label {
+      font-family: var(--f-mono);
+      font-size: .68rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--red);
+      display: block;
+      margin-bottom: 20px;
+    }
+    .legal-block h2 {
+      font-family: var(--f-display);
+      font-weight: 900;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      text-transform: uppercase;
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+    .legal-block p {
+      color: var(--ink-muted);
+      font-size: .96rem;
+      line-height: 1.78;
+      margin-bottom: 10px;
+    }
+    .legal-block p:last-child { margin-bottom: 0; }
+    .legal-block strong { color: var(--ink); }
+    .legal-id-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px 40px;
+      margin-top: 28px;
+    }
+    .legal-id-key {
+      font-family: var(--f-mono);
+      font-size: .68rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 6px;
+      display: block;
+    }
+    .legal-id-val {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ink);
+    }
+    .legal-address {
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.8;
+      color: var(--ink);
+    }
+    .legal-note {
+      margin-top: 28px;
+      padding: 20px 24px;
+      background: var(--bg-3);
+      border-left: 2px solid var(--red);
+      font-family: var(--f-mono);
+      font-size: .82rem;
+      color: var(--ink-muted);
+      line-height: 1.6;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .legal-grid { grid-template-columns: 1fr; }
+      .legal-block { padding: 36px 24px; }
+      .legal-id-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<!-- ==================== PAGE HEADER ==================== -->
+<section class="hero">
+  <div class="hero-text-col">
+    <div class="hero-overline">
+      <span class="mono">Informations pratiques</span>
+      <span class="overline-bar"></span>
+    </div>
+    <h1 class="hero-h1">
+      <span class="h1-line1">Conditions</span>
+      <span class="h1-line2">Tarifaires</span>
+    </h1>
+  </div>
+  <div class="hero-photo-col">
+    <img
+      src="images/20230826-020548-Credits-YourWolfAgency_v&b.jpg"
+      alt="Nant'Effect effets scéniques"
+      class="hero-img"
+      loading="eager"
+    >
+    <div class="hero-img-caption-left">©YourWolfAgency</div>
+  </div>
+</section>
+
+<div class="contact-section" style="display:block; padding-top:0;">
+  <div class="legal-grid">
+
+    <!-- Location Week-End -->
+    <div class="legal-block">
+      <span class="legal-block-label">01 — Location Week-End</span>
+      <h2>Calcul des tarifs</h2>
+      <p>Nos tarifs de location sont calculés selon un système de coefficient appliqué à la durée d'utilisation :</p>
+      <div class="legal-id-grid" style="grid-template-columns: 1fr;">
+        <div>
+          <span class="legal-id-key">Retrait atelier</span>
+          <span class="legal-id-val">Coefficient 1 (Vendredi — Lundi 9h/12h)</span>
+        </div>
+        <div>
+          <span class="legal-id-key">Avec livraison transporteur</span>
+          <span class="legal-id-val">Coefficient 1.5 (Jeudi — Mardi)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Longue durée -->
+    <div class="legal-block">
+      <span class="legal-block-label">02 — Location longue durée</span>
+      <h2>Périodes étendues</h2>
+      <p>Pour les besoins spécifiques au-delà de 30 jours, nous appliquons une tarification dégressive sur mesure.</p>
+      <div class="legal-note">
+        Pour toute demande de devis personnalisé ou pour les périodes de plus de 30 jours, merci de nous contacter directement via la <a href="contact.html" style="color:var(--red);">page contact</a>.
+      </div>
+    </div>
+
+    <!-- Tableau indicatif -->
+    <div class="legal-block full">
+      <span class="legal-block-label">03 — Grille indicative</span>
+      <h2>Coefficients de location</h2>
+      <table style="width:100%; border-collapse:collapse; margin-top:20px;">
+        <thead>
+          <tr style="border-bottom: 2px solid var(--line-hard);">
+            <th style="text-align:left; padding:12px; font-family:var(--f-mono);">Durée (jours)</th>
+            <th style="text-align:left; padding:12px; font-family:var(--f-mono);">Coefficient</th>
+          </tr>
+        </thead>
+        <tbody>
+<tr><td style="padding:10px; border-bottom:1px solid #eee;">1</td><td style="padding:10px; border-bottom:1px solid #eee;">1</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">2</td><td style="padding:10px; border-bottom:1px solid #eee;">1.5</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">3</td><td style="padding:10px; border-bottom:1px solid #eee;">2</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">4</td><td style="padding:10px; border-bottom:1px solid #eee;">2.5</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">5</td><td style="padding:10px; border-bottom:1px solid #eee;">3</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">6</td><td style="padding:10px; border-bottom:1px solid #eee;">3.25</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">7</td><td style="padding:10px; border-bottom:1px solid #eee;">3.5</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">8</td><td style="padding:10px; border-bottom:1px solid #eee;">3.75</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">9</td><td style="padding:10px; border-bottom:1px solid #eee;">4</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">10</td><td style="padding:10px; border-bottom:1px solid #eee;">4.25</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">11</td><td style="padding:10px; border-bottom:1px solid #eee;">4.5</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">12</td><td style="padding:10px; border-bottom:1px solid #eee;">4.75</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">13</td><td style="padding:10px; border-bottom:1px solid #eee;">5</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">14</td><td style="padding:10px; border-bottom:1px solid #eee;">5.25</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">15</td><td style="padding:10px; border-bottom:1px solid #eee;">5.5</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">16</td><td style="padding:10px; border-bottom:1px solid #eee;">5.75</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">17</td><td style="padding:10px; border-bottom:1px solid #eee;">6</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">18</td><td style="padding:10px; border-bottom:1px solid #eee;">6.1</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">19</td><td style="padding:10px; border-bottom:1px solid #eee;">6.2</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">20</td><td style="padding:10px; border-bottom:1px solid #eee;">6.3</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">21</td><td style="padding:10px; border-bottom:1px solid #eee;">6.4</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">22</td><td style="padding:10px; border-bottom:1px solid #eee;">6.5</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">23</td><td style="padding:10px; border-bottom:1px solid #eee;">6.6</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">24</td><td style="padding:10px; border-bottom:1px solid #eee;">6.7</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">25</td><td style="padding:10px; border-bottom:1px solid #eee;">6.8</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">26</td><td style="padding:10px; border-bottom:1px solid #eee;">6.9</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">27</td><td style="padding:10px; border-bottom:1px solid #eee;">7</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">28</td><td style="padding:10px; border-bottom:1px solid #eee;">7.1</td></tr>
+      <tr><td style="padding:10px; border-bottom:1px solid #eee;">29</td><td style="padding:10px; border-bottom:1px solid #eee;">7.2</td></tr>
+      <tr><td style="padding:10px;">30</td><td style="padding:10px;">7.3</td></tr>
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/flame.png">
+  <title>Mentions légales — Nant'Effect Effets Spéciaux Scéniques</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&family=Share+Tech+Mono&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    /* ── LEGAL GRID ── */
+    .legal-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      background: var(--line-hard);
+    }
+    .legal-block {
+      background: var(--bg);
+      padding: 52px 44px;
+    }
+    .legal-block.full {
+      grid-column: 1 / -1;
+    }
+    .legal-block-label {
+      font-family: var(--f-mono);
+      font-size: .68rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--red);
+      display: block;
+      margin-bottom: 20px;
+    }
+    .legal-block h2 {
+      font-family: var(--f-display);
+      font-weight: 900;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      text-transform: uppercase;
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+    .legal-block p {
+      color: var(--ink-muted);
+      font-size: .96rem;
+      line-height: 1.78;
+      margin-bottom: 10px;
+    }
+    .legal-block p:last-child { margin-bottom: 0; }
+    .legal-block strong { color: var(--ink); }
+    .legal-id-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px 40px;
+      margin-top: 28px;
+    }
+    .legal-id-key {
+      font-family: var(--f-mono);
+      font-size: .68rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 6px;
+      display: block;
+    }
+    .legal-id-val {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ink);
+    }
+    .legal-address {
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.8;
+      color: var(--ink);
+    }
+    .legal-note {
+      margin-top: 28px;
+      padding: 20px 24px;
+      background: var(--bg-3);
+      border-left: 2px solid var(--red);
+      font-family: var(--f-mono);
+      font-size: .82rem;
+      color: var(--ink-muted);
+      line-height: 1.6;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .legal-grid { grid-template-columns: 1fr; }
+      .legal-block { padding: 36px 24px; }
+      .legal-id-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<!-- ==================== PAGE HEADER ==================== -->
+<section class="hero">
+  <div class="hero-text-col">
+    <div class="hero-overline">
+      <span class="mono">Informations légales</span>
+      <span class="overline-bar"></span>
+    </div>
+    <h1 class="hero-h1">
+      <span class="h1-line1">Mentions</span>
+      <span class="h1-line2">légales</span>
+    </h1>
+    <p class="hero-body">
+      Toutes les informations légales relatives à l'éditeur du site, à l'hébergement
+      et à la propriété intellectuelle des contenus publiés sur nanteffect.fr.
+    </p>
+  </div>
+  <div class="hero-photo-col">
+    <img
+      src="images/20230617-205551-Credits-@YourWolfAgency_spark.jpg"
+      alt="Nant'Effect effets scéniques"
+      class="hero-img"
+      loading="eager"
+    >
+    <div class="hero-img-caption-left">©YourWolfAgency</div>
+  </div>
+</section>
+
+<!-- ==================== CONTENU ==================== -->
+<div class="contact-section" style="display:block; padding-top:0;">
+  <div class="legal-grid">
+
+    <!-- Éditeur -->
+    <div class="legal-block">
+      <span class="legal-block-label">01 — Éditeur du site</span>
+      <h2>Nant'Effect</h2>
+      <div class="legal-address">
+        11 rue des Minées<br>
+        ZA Les Minées<br>
+        44640 Cheix-en-Retz<br>
+        France
+      </div>
+      <div class="legal-id-grid">
+        <div>
+          <span class="legal-id-key">Téléphone</span>
+          <span class="legal-id-val">02 53 39 04 44</span>
+        </div>
+        <div>
+          <span class="legal-id-key">Site web</span>
+          <span class="legal-id-val">www.nanteffect.fr</span>
+        </div>
+        <div>
+          <span class="legal-id-key">N° SIRET</span>
+          <span class="legal-id-val">847 622 693 00020</span>
+        </div>
+        <div>
+          <span class="legal-id-key">TVA Intracommunautaire</span>
+          <span class="legal-id-val">FR93 847 622 693</span>
+        </div>
+        <div>
+          <span class="legal-id-key">Code APE</span>
+          <span class="legal-id-val">9002Z</span>
+        </div>
+        <div>
+          <span class="legal-id-key">Titulaire du Label des Prestataires du Spectacle Vivat</span>
+          <span class="legal-id-val">n°973</span>
+        </div>
+        <div>
+          <span class="legal-id-key">Email</span>
+          <span class="legal-id-val">contact@nanteffect.fr</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hébergement -->
+    <div class="legal-block">
+      <span class="legal-block-label">02 — Hébergement &amp; conception</span>
+      <h2>Informations<br>techniques</h2>
+      <p>
+        Le présent site web est accessible à l'adresse URL
+        <strong>www.nanteffect.fr</strong>
+      </p>
+      <p>
+        <strong>Hébergeur :</strong><br>
+        Sogéwest<br>
+        11 rue de la Claire Fontaine<br>
+        44700 Orvault — France
+      </p>
+      <p>
+        <strong>Conception &amp; formation :</strong><br>
+        Phare · <a href="https://www.com-a-nantes.com" style="color:var(--red);">www.com-a-nantes.com</a>
+      </p>
+    </div>
+
+    <!-- Propriété intellectuelle -->
+    <div class="legal-block full">
+      <span class="legal-block-label">03 — Propriété intellectuelle</span>
+      <h2>Droits &amp; propriété</h2>
+      <p>
+        Tous les éléments qui composent ce site — notamment les textes, articles, communiqués,
+        présentations, brochures, illustrations et photographies — sont la propriété exclusive
+        de <strong>www.nanteffect.fr</strong>.
+      </p>
+      <p>
+        Sauf autorisation expresse et préalable de Nant'Effect, la reproduction ainsi que toute
+        utilisation de ces éléments autres que la consultation individuelle et privée sont strictement
+        interdites et constitueraient une contrefaçon sanctionnée par les articles L.335-2
+        et suivants du Code de la propriété intellectuelle.
+      </p>
+      <div class="legal-note">
+        Pour toute demande d'autorisation de reproduction ou d'utilisation des contenus publiés sur
+        ce site, merci de nous contacter par téléphone au <strong>02 53 39 04 44</strong> ou via
+        la <a href="contact.html" style="color:var(--red);">page contact</a>.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/components.js"></script>
+</body>
+</html>
